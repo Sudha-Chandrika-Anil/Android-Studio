@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OptionsMenu</string>
+    <string name="item1">Item1</string>
+    <string name="item2">item2</string>
+    <string name="item_grp">item_grp</string>
+    <string name="item_grp2">item_grp2</string>
+    <string name="itm5">Item5</string>
+    <string name="item6">Item6</string>
+    <string name="item7">Item7</string>
+</resources>
