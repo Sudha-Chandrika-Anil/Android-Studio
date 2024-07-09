@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "1_Layout"
+rootProject.name = "TabLayout_Demo"
 include(":app")
  
