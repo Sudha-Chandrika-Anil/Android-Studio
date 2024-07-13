@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.example.tab_grid_demo;
 
 import android.content.Context;
@@ -36,3 +37,43 @@ public class CourseGVAdapter extends ArrayAdapter<CourseModel> {
         return listitemView;
     }
 }
+=======
+package com.example.tab_grid_demo;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import java.util.ArrayList;
+
+public class CourseGVAdapter extends ArrayAdapter<CourseModel> {
+
+    public CourseGVAdapter(@NonNull Context context, ArrayList<CourseModel> courseModelArrayList) {
+        super(context, 0, courseModelArrayList);
+    }
+
+    @NonNull
+    @Override
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+
+        View listitemView = convertView;
+        if (listitemView == null) {
+            // Layout Inflater inflates each item to be displayed in GridView.
+            listitemView = LayoutInflater.from(getContext()).inflate(R.layout.card_item, parent, false);
+        }
+
+        CourseModel courseModel = getItem(position);
+        TextView courseTV = listitemView.findViewById(R.id.idTVCourse);
+        ImageView courseIV = listitemView.findViewById(R.id.idIVcourse);
+
+        courseTV.setText(courseModel.getCourse_name());
+        courseIV.setImageResource(courseModel.getImgid());
+        return listitemView;
+    }
+}
+>>>>>>> 1528b3738b429c9cfb1027f8323df573c5edda24
