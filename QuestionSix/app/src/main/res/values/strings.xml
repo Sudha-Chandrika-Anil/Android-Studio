@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QuestionSix</string>
+    <string name="long_press_me">Long press me!</string>
+    <string name="show_popup_menu">Show Popup Menu</string>
+    <string name="yellow">Yellow</string>
+    <string name="gray">Gray</string>
+    <string name="cyan">Cyan</string>
+</resources>
+
